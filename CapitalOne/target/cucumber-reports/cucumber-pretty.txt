@@ -1,0 +1,360 @@
+
+@Test
+Scenario: log in                              # src/test/java/features/HomePage.feature:3
+  Given I am on Capital one homepage          # stepDefinitions.HomePageStepDefinition.i_am_on_capital_one_homepage()
+  And I enter a valid UserName                # stepDefinitions.HomePageStepDefinition.i_enter_a_valid_user_name()
+  And I enter a valid password                # stepDefinitions.HomePageStepDefinition.i_enter_a_valid_password()
+  And I check the checkBox to keep me sign in # stepDefinitions.HomePageStepDefinition.i_check_the_check_box_to_keep_me_sign_in()
+  When I click on sign In                     # stepDefinitions.HomePageStepDefinition.i_click_on_sign_in()
+  Then I should see my account opened         # stepDefinitions.HomePageStepDefinition.i_should_see_my_account_opened()
+
+@Test
+Scenario: Recent transaction                    # src/test/java/features/HomePage.feature:20
+  Given I am at Capital one homePage            # stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page()
+      org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy26.sendKeys(Unknown Source)
+	at homepage.HomePage.enteruserName(HomePage.java:39)
+	at stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page(HomePageStepDefinition.java:83)
+	at ✽.I am at Capital one homePage(file:///C:/Users/dendo/IdeaProjects/BDD_Automation_Framework_Team1/CapitalOne/src/test/java/features/HomePage.feature:21)
+
+
+    Embedding demo1 [image/png 98708 bytes]
+
+  And I mouse hover to past transaction         # stepDefinitions.HomePageStepDefinition.i_mouse_hover_to_past_transaction()
+  When I click On pending                       # stepDefinitions.HomePageStepDefinition.i_click_on_pending()
+  Then I should see all the pending Transaction # stepDefinitions.HomePageStepDefinition.i_should_see_all_the_pending_transaction()
+
+@Test
+Scenario: Send money with Zelle                # src/test/java/features/HomePage.feature:26
+  Given I am at Capital one homePage           # stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page()
+      org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy26.sendKeys(Unknown Source)
+	at homepage.HomePage.enteruserName(HomePage.java:39)
+	at stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page(HomePageStepDefinition.java:83)
+	at ✽.I am at Capital one homePage(file:///C:/Users/dendo/IdeaProjects/BDD_Automation_Framework_Team1/CapitalOne/src/test/java/features/HomePage.feature:27)
+
+
+    Embedding demo1 [image/png 98692 bytes]
+
+  And I check the checkBox and I click agree   # stepDefinitions.HomePageStepDefinition.i_check_the_check_box_and_i_click_agree()
+  And I enter a valid Email and I enter Amount # stepDefinitions.HomePageStepDefinition.i_enter_a_valid_email_and_i_enter_amount()
+  When I click on continue                     # stepDefinitions.HomePageStepDefinition.i_click_on_continue()
+  Then I should see the transaction pending    # stepDefinitions.HomePageStepDefinition.i_should_see_the_transaction_pending()
+
+@Test
+Scenario: Change address                                       # src/test/java/features/HomePage.feature:33
+  Given I am at Capital one homePage                           # stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page()
+      org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy26.sendKeys(Unknown Source)
+	at homepage.HomePage.enteruserName(HomePage.java:39)
+	at stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page(HomePageStepDefinition.java:83)
+	at ✽.I am at Capital one homePage(file:///C:/Users/dendo/IdeaProjects/BDD_Automation_Framework_Team1/CapitalOne/src/test/java/features/HomePage.feature:34)
+
+
+    Embedding demo1 [image/png 98708 bytes]
+
+  And I mouse hover to Account and click                       # stepDefinitions.HomePageStepDefinition.i_mouse_hover_to_account_and_click()
+  And I mouse hover to profile and click                       # stepDefinitions.HomePageStepDefinition.i_mouse_hover_to_profile_and_click()
+  And I mouse hover to address and click                       # stepDefinitions.HomePageStepDefinition.i_mouse_hover_to_address_and_click()
+  And I enter a valid address and a valid and a valid Zip code # stepDefinitions.HomePageStepDefinition.i_enter_a_valid_address_and_a_valid_and_a_valid_zip_code()
+  When I click on save                                         # stepDefinitions.HomePageStepDefinition.i_click_on_save()
+  Then I should see the new address saved on my account        # stepDefinitions.HomePageStepDefinition.i_should_see_the_new_address_saved_on_my_account()
+
+@Test
+Scenario: LogOut                                             # src/test/java/features/HomePage.feature:42
+  Given I am at Capital one homePage                         # stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page()
+      org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy26.sendKeys(Unknown Source)
+	at homepage.HomePage.enteruserName(HomePage.java:39)
+	at stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page(HomePageStepDefinition.java:83)
+	at ✽.I am at Capital one homePage(file:///C:/Users/dendo/IdeaProjects/BDD_Automation_Framework_Team1/CapitalOne/src/test/java/features/HomePage.feature:43)
+
+
+    Embedding demo1 [image/png 98708 bytes]
+
+  And I mouse hover to Account and click                     # stepDefinitions.HomePageStepDefinition.i_mouse_hover_to_account_and_click()
+  And I mouse hover to sign out                              # stepDefinitions.HomePageStepDefinition.i_mouse_hover_to_sign_out()
+  When I click on sign Out                                   # stepDefinitions.HomePageStepDefinition.i_click_on_sign_out()
+  Then I should see the new the general Capital One homepage # stepDefinitions.HomePageStepDefinition.i_should_see_the_new_the_general_capital_one_homepage()
+
+@Test
+Scenario: Instagram                                                # src/test/java/features/HomePage.feature:49
+  Given I am at Capital one homePage                               # stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page()
+      org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy26.sendKeys(Unknown Source)
+	at homepage.HomePage.enteruserName(HomePage.java:39)
+	at stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page(HomePageStepDefinition.java:83)
+	at ✽.I am at Capital one homePage(file:///C:/Users/dendo/IdeaProjects/BDD_Automation_Framework_Team1/CapitalOne/src/test/java/features/HomePage.feature:50)
+
+
+    Embedding demo1 [image/png 98708 bytes]
+
+  And I scroll all the way down to the footer                      # stepDefinitions.HomePageStepDefinition.i_scroll_all_the_way_down_to_the_footer()
+  And I mouse hover to Instagram logo                              # stepDefinitions.HomePageStepDefinition.i_mouse_hover_to_instagram_logo()
+  When I click on the Instagram logo                               # stepDefinitions.HomePageStepDefinition.i_click_on_the_instagram_logo()
+  Then I should see a new tab landed properly                      # stepDefinitions.HomePageStepDefinition.i_should_see_a_new_tab_landed_properly()
+  And I should see the  Capital One Instagram page landed properly # stepDefinitions.HomePageStepDefinition.i_should_see_the_capital_one_instagram_page_landed_properly()
+
+@Test
+Scenario: Tweeter                                                # src/test/java/features/HomePage.feature:57
+  Given I am at Capital one homePage                             # stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page()
+      org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy26.sendKeys(Unknown Source)
+	at homepage.HomePage.enteruserName(HomePage.java:39)
+	at stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page(HomePageStepDefinition.java:83)
+	at ✽.I am at Capital one homePage(file:///C:/Users/dendo/IdeaProjects/BDD_Automation_Framework_Team1/CapitalOne/src/test/java/features/HomePage.feature:58)
+
+
+    Embedding demo1 [image/png 98708 bytes]
+
+  And I scroll all the way down to the footer                    # stepDefinitions.HomePageStepDefinition.i_scroll_all_the_way_down_to_the_footer()
+  And I mouse hover to Tweeter logo                              # stepDefinitions.HomePageStepDefinition.i_mouse_hover_to_tweeter_logo()
+  When I click on the Tweeter  logo                              # stepDefinitions.HomePageStepDefinition.i_click_on_the_tweeter_logo()
+  Then I should see a new tab landed properly                    # stepDefinitions.HomePageStepDefinition.i_should_see_a_new_tab_landed_properly()
+  And I should see the  Capital One Tweeter page landed properly # stepDefinitions.HomePageStepDefinition.i_should_see_the_capital_one_tweeter_page_landed_properly()
+
+@Test
+Scenario: FaceBook                                                # src/test/java/features/HomePage.feature:65
+  Given I am at Capital one homePage                              # stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page()
+      org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy26.sendKeys(Unknown Source)
+	at homepage.HomePage.enteruserName(HomePage.java:39)
+	at stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page(HomePageStepDefinition.java:83)
+	at ✽.I am at Capital one homePage(file:///C:/Users/dendo/IdeaProjects/BDD_Automation_Framework_Team1/CapitalOne/src/test/java/features/HomePage.feature:66)
+
+
+    Embedding demo1 [image/png 98708 bytes]
+
+  And I scroll all the way down to the footer                     # stepDefinitions.HomePageStepDefinition.i_scroll_all_the_way_down_to_the_footer()
+  And I mouse hover to FaceBook logo                              # stepDefinitions.HomePageStepDefinition.i_mouse_hover_to_face_book_logo()
+  When I click on the FaceBook  logo                              # stepDefinitions.HomePageStepDefinition.i_click_on_the_face_book_logo()
+  Then I should see a new tab landed properly                     # stepDefinitions.HomePageStepDefinition.i_should_see_a_new_tab_landed_properly()
+  And I should see the  Capital One FaceBook page landed properly # stepDefinitions.HomePageStepDefinition.i_should_see_the_capital_one_face_book_page_landed_properly()
+
+@Test
+Scenario: CreditCards                                    # src/test/java/features/HomePage.feature:73
+  Given I am at Capital one homePage                     # stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page()
+      org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy26.sendKeys(Unknown Source)
+	at homepage.HomePage.enteruserName(HomePage.java:39)
+	at stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page(HomePageStepDefinition.java:83)
+	at ✽.I am at Capital one homePage(file:///C:/Users/dendo/IdeaProjects/BDD_Automation_Framework_Team1/CapitalOne/src/test/java/features/HomePage.feature:74)
+
+
+    Embedding demo1 [image/png 98708 bytes]
+
+  And I double click on Credit Cards                     # stepDefinitions.HomePageStepDefinition.i_double_click_on_credit_cards()
+  And I mouse hover to subMenu                           # stepDefinitions.HomePageStepDefinition.i_mouse_hover_to_sub_menu()
+  And double click on compare Credit Cards               # stepDefinitions.HomePageStepDefinition.double_click_on_compare_credit_cards()
+  When I check "travel" "Popular" "No fee" "All"         # stepDefinitions.HomePageStepDefinition.i_check(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  Then I should see all options are landed automatically # stepDefinitions.HomePageStepDefinition.i_should_see_all_options_are_landed_automatically()
+
+@Test
+Scenario: Capital One Logo                        # src/test/java/features/HomePage.feature:81
+  Given I am at Capital one homePage              # stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page()
+      org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy26.sendKeys(Unknown Source)
+	at homepage.HomePage.enteruserName(HomePage.java:39)
+	at stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page(HomePageStepDefinition.java:83)
+	at ✽.I am at Capital one homePage(file:///C:/Users/dendo/IdeaProjects/BDD_Automation_Framework_Team1/CapitalOne/src/test/java/features/HomePage.feature:82)
+
+
+    Embedding demo1 [image/png 98708 bytes]
+
+  When I mouse hover to Menu bar                  # null
+  Then I should see Capital One Logo is displayed # stepDefinitions.HomePageStepDefinition.i_should_see_capital_one_logo_is_displayed()
+
+@Test
+Scenario: Covid 19 Updates                     # src/test/java/features/HomePage.feature:86
+  Given I am at Capital one homePage           # stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page()
+      org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy26.sendKeys(Unknown Source)
+	at homepage.HomePage.enteruserName(HomePage.java:39)
+	at stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page(HomePageStepDefinition.java:83)
+	at ✽.I am at Capital one homePage(file:///C:/Users/dendo/IdeaProjects/BDD_Automation_Framework_Team1/CapitalOne/src/test/java/features/HomePage.feature:87)
+
+
+    Embedding demo1 [image/png 98708 bytes]
+
+  And I scroll down to New COVID-19 updates    # stepDefinitions.HomePageStepDefinition.i_scroll_down_to_new_covid_updates(java.lang.Integer)
+  When I click on view Up Dates                # stepDefinitions.HomePageStepDefinition.i_click_on_view_up_dates()
+  Then I should see a new page landed properly # stepDefinitions.HomePageStepDefinition.i_should_see_a_new_page_landed_properly()
+
+@Test
+Scenario: FeedBack                                            # src/test/java/features/HomePage.feature:92
+  Given I am at Capital one homePage                          # stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page()
+      org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy26.sendKeys(Unknown Source)
+	at homepage.HomePage.enteruserName(HomePage.java:39)
+	at stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page(HomePageStepDefinition.java:83)
+	at ✽.I am at Capital one homePage(file:///C:/Users/dendo/IdeaProjects/BDD_Automation_Framework_Team1/CapitalOne/src/test/java/features/HomePage.feature:93)
+
+
+    Embedding demo1 [image/png 98708 bytes]
+
+  And I mouse hover to left bottom of the screen              # stepDefinitions.HomePageStepDefinition.i_mouse_hover_to_left_bottom_of_the_screen()
+  And I click on feed Back                                    # stepDefinitions.HomePageStepDefinition.i_click_on_feed_back()
+  And I click on general feedBack                             # null
+  When I select Emogy                                         # stepDefinitions.HomePageStepDefinition.i_select_emogy()
+  Then I should see multiple feedBack options appear under it # stepDefinitions.HomePageStepDefinition.i_should_see_multiple_feed_back_options_appear_under_it()
+
+@Test
+Scenario: location                               # src/test/java/features/HomePage.feature:100
+  Given I am at Capital one homePage             # stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page()
+      org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy26.sendKeys(Unknown Source)
+	at homepage.HomePage.enteruserName(HomePage.java:39)
+	at stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page(HomePageStepDefinition.java:83)
+	at ✽.I am at Capital one homePage(file:///C:/Users/dendo/IdeaProjects/BDD_Automation_Framework_Team1/CapitalOne/src/test/java/features/HomePage.feature:101)
+
+
+    Embedding demo1 [image/png 98708 bytes]
+
+  And I click on Location                        # stepDefinitions.HomePageStepDefinition.i_click_on_location()
+  And I enter a zip code                         # stepDefinitions.HomePageStepDefinition.i_enter_a_zip_code()
+  When I click on searchButton                   # stepDefinitions.HomePageStepDefinition.i_click_on_search_button()
+  Then I should see all Capital One ATM location # stepDefinitions.HomePageStepDefinition.i_should_see_all_capital_one_atm_location()

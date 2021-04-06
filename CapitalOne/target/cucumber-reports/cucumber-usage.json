@@ -1,0 +1,110 @@
+[
+  {
+    "source": "I am on Capital one homepage",
+    "steps": [
+      {
+        "name": "I am on Capital one homepage",
+        "aggregatedDurations": {
+          "median": 4.6122288,
+          "average": 4.6122288
+        },
+        "durations": [
+          {
+            "duration": 4.6122288,
+            "location": "file:///C:/Users/dendo/IdeaProjects/BDD_Automation_Framework_Team1/CapitalOne/src/test/java/features/HomePage.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I enter a valid UserName",
+    "steps": [
+      {
+        "name": "I enter a valid UserName",
+        "aggregatedDurations": {
+          "median": 4.1257742,
+          "average": 4.1257742
+        },
+        "durations": [
+          {
+            "duration": 4.1257742,
+            "location": "file:///C:/Users/dendo/IdeaProjects/BDD_Automation_Framework_Team1/CapitalOne/src/test/java/features/HomePage.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I enter a valid password",
+    "steps": [
+      {
+        "name": "I enter a valid password",
+        "aggregatedDurations": {
+          "median": 1.116342,
+          "average": 1.116342
+        },
+        "durations": [
+          {
+            "duration": 1.116342,
+            "location": "file:///C:/Users/dendo/IdeaProjects/BDD_Automation_Framework_Team1/CapitalOne/src/test/java/features/HomePage.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I check the checkBox to keep me sign in",
+    "steps": [
+      {
+        "name": "I check the checkBox to keep me sign in",
+        "aggregatedDurations": {
+          "median": 2.1005269,
+          "average": 2.1005269
+        },
+        "durations": [
+          {
+            "duration": 2.1005269,
+            "location": "file:///C:/Users/dendo/IdeaProjects/BDD_Automation_Framework_Team1/CapitalOne/src/test/java/features/HomePage.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I click on sign In",
+    "steps": [
+      {
+        "name": "I click on sign In",
+        "aggregatedDurations": {
+          "median": 2.059844,
+          "average": 2.059844
+        },
+        "durations": [
+          {
+            "duration": 2.059844,
+            "location": "file:///C:/Users/dendo/IdeaProjects/BDD_Automation_Framework_Team1/CapitalOne/src/test/java/features/HomePage.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I should see my account opened",
+    "steps": [
+      {
+        "name": "I should see my account opened",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///C:/Users/dendo/IdeaProjects/BDD_Automation_Framework_Team1/CapitalOne/src/test/java/features/HomePage.feature:9"
+          }
+        ]
+      }
+    ]
+  }
+]

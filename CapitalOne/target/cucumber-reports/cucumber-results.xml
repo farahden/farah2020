@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="12" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="13" time="86.119">
+    <testcase classname="Capital one home page tests" name="log in" time="14.89">
+        <system-out>
+            <![CDATA[Given I am on Capital one homepage..........................................passed
+And I enter a valid UserName................................................passed
+And I enter a valid password................................................passed
+And I check the checkBox to keep me sign in.................................passed
+When I click on sign In.....................................................passed
+Then I should see my account opened.........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Capital one home page tests" name="Recent transaction" time="5.731">
+        <failure message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchSessionException">
+            <![CDATA[Given I am at Capital one homePage..........................................failed
+And I mouse hover to past transaction.......................................skipped
+When I click On pending.....................................................skipped
+Then I should see all the pending Transaction...............................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy26.sendKeys(Unknown Source)
+	at homepage.HomePage.enteruserName(HomePage.java:39)
+	at stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page(HomePageStepDefinition.java:83)
+	at ✽.I am at Capital one homePage(file:///C:/Users/dendo/IdeaProjects/BDD_Automation_Framework_Team1/CapitalOne/src/test/java/features/HomePage.feature:21)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Capital one home page tests" name="Send money with Zelle" time="5.8">
+        <failure message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchSessionException">
+            <![CDATA[Given I am at Capital one homePage..........................................failed
+And I check the checkBox and I click agree..................................skipped
+And I enter a valid Email and I enter Amount................................skipped
+When I click on continue....................................................skipped
+Then I should see the transaction pending...................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy26.sendKeys(Unknown Source)
+	at homepage.HomePage.enteruserName(HomePage.java:39)
+	at stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page(HomePageStepDefinition.java:83)
+	at ✽.I am at Capital one homePage(file:///C:/Users/dendo/IdeaProjects/BDD_Automation_Framework_Team1/CapitalOne/src/test/java/features/HomePage.feature:27)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Capital one home page tests" name="Change address" time="5.899">
+        <failure message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchSessionException">
+            <![CDATA[Given I am at Capital one homePage..........................................failed
+And I mouse hover to Account and click......................................skipped
+And I mouse hover to profile and click......................................skipped
+And I mouse hover to address and click......................................skipped
+And I enter a valid address and a valid and a valid Zip code................skipped
+When I click on save........................................................skipped
+Then I should see the new address saved on my account.......................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy26.sendKeys(Unknown Source)
+	at homepage.HomePage.enteruserName(HomePage.java:39)
+	at stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page(HomePageStepDefinition.java:83)
+	at ✽.I am at Capital one homePage(file:///C:/Users/dendo/IdeaProjects/BDD_Automation_Framework_Team1/CapitalOne/src/test/java/features/HomePage.feature:34)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Capital one home page tests" name="LogOut" time="5.804">
+        <failure message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchSessionException">
+            <![CDATA[Given I am at Capital one homePage..........................................failed
+And I mouse hover to Account and click......................................skipped
+And I mouse hover to sign out...............................................skipped
+When I click on sign Out....................................................skipped
+Then I should see the new the general Capital One homepage..................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy26.sendKeys(Unknown Source)
+	at homepage.HomePage.enteruserName(HomePage.java:39)
+	at stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page(HomePageStepDefinition.java:83)
+	at ✽.I am at Capital one homePage(file:///C:/Users/dendo/IdeaProjects/BDD_Automation_Framework_Team1/CapitalOne/src/test/java/features/HomePage.feature:43)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Capital one home page tests" name="Instagram" time="6.018">
+        <failure message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchSessionException">
+            <![CDATA[Given I am at Capital one homePage..........................................failed
+And I scroll all the way down to the footer.................................skipped
+And I mouse hover to Instagram logo.........................................skipped
+When I click on the Instagram logo..........................................skipped
+Then I should see a new tab landed properly.................................skipped
+And I should see the  Capital One Instagram page landed properly............skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy26.sendKeys(Unknown Source)
+	at homepage.HomePage.enteruserName(HomePage.java:39)
+	at stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page(HomePageStepDefinition.java:83)
+	at ✽.I am at Capital one homePage(file:///C:/Users/dendo/IdeaProjects/BDD_Automation_Framework_Team1/CapitalOne/src/test/java/features/HomePage.feature:50)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Capital one home page tests" name="Tweeter" time="5.724">
+        <failure message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchSessionException">
+            <![CDATA[Given I am at Capital one homePage..........................................failed
+And I scroll all the way down to the footer.................................skipped
+And I mouse hover to Tweeter logo...........................................skipped
+When I click on the Tweeter  logo...........................................skipped
+Then I should see a new tab landed properly.................................skipped
+And I should see the  Capital One Tweeter page landed properly..............skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy26.sendKeys(Unknown Source)
+	at homepage.HomePage.enteruserName(HomePage.java:39)
+	at stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page(HomePageStepDefinition.java:83)
+	at ✽.I am at Capital one homePage(file:///C:/Users/dendo/IdeaProjects/BDD_Automation_Framework_Team1/CapitalOne/src/test/java/features/HomePage.feature:58)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Capital one home page tests" name="FaceBook" time="5.814">
+        <failure message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchSessionException">
+            <![CDATA[Given I am at Capital one homePage..........................................failed
+And I scroll all the way down to the footer.................................skipped
+And I mouse hover to FaceBook logo..........................................skipped
+When I click on the FaceBook  logo..........................................skipped
+Then I should see a new tab landed properly.................................skipped
+And I should see the  Capital One FaceBook page landed properly.............skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy26.sendKeys(Unknown Source)
+	at homepage.HomePage.enteruserName(HomePage.java:39)
+	at stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page(HomePageStepDefinition.java:83)
+	at ✽.I am at Capital one homePage(file:///C:/Users/dendo/IdeaProjects/BDD_Automation_Framework_Team1/CapitalOne/src/test/java/features/HomePage.feature:66)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Capital one home page tests" name="CreditCards" time="5.854">
+        <failure message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchSessionException">
+            <![CDATA[Given I am at Capital one homePage..........................................failed
+And I double click on Credit Cards..........................................skipped
+And I mouse hover to subMenu................................................skipped
+And double click on compare Credit Cards....................................skipped
+When I check "travel" "Popular" "No fee" "All"..............................skipped
+Then I should see all options are landed automatically......................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy26.sendKeys(Unknown Source)
+	at homepage.HomePage.enteruserName(HomePage.java:39)
+	at stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page(HomePageStepDefinition.java:83)
+	at ✽.I am at Capital one homePage(file:///C:/Users/dendo/IdeaProjects/BDD_Automation_Framework_Team1/CapitalOne/src/test/java/features/HomePage.feature:74)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Capital one home page tests" name="Capital One Logo" time="6.719">
+        <failure message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchSessionException">
+            <![CDATA[Given I am at Capital one homePage..........................................failed
+When I mouse hover to Menu bar..............................................skipped
+Then I should see Capital One Logo is displayed.............................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy26.sendKeys(Unknown Source)
+	at homepage.HomePage.enteruserName(HomePage.java:39)
+	at stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page(HomePageStepDefinition.java:83)
+	at ✽.I am at Capital one homePage(file:///C:/Users/dendo/IdeaProjects/BDD_Automation_Framework_Team1/CapitalOne/src/test/java/features/HomePage.feature:82)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Capital one home page tests" name="Covid 19 Updates" time="5.822">
+        <failure message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchSessionException">
+            <![CDATA[Given I am at Capital one homePage..........................................failed
+And I scroll down to New COVID-19 updates...................................skipped
+When I click on view Up Dates...............................................skipped
+Then I should see a new page landed properly................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy26.sendKeys(Unknown Source)
+	at homepage.HomePage.enteruserName(HomePage.java:39)
+	at stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page(HomePageStepDefinition.java:83)
+	at ✽.I am at Capital one homePage(file:///C:/Users/dendo/IdeaProjects/BDD_Automation_Framework_Team1/CapitalOne/src/test/java/features/HomePage.feature:87)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Capital one home page tests" name="FeedBack" time="5.824">
+        <failure message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchSessionException">
+            <![CDATA[Given I am at Capital one homePage..........................................failed
+And I mouse hover to left bottom of the screen..............................skipped
+And I click on feed Back....................................................skipped
+And I click on general feedBack.............................................skipped
+When I select Emogy.........................................................skipped
+Then I should see multiple feedBack options appear under it.................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy26.sendKeys(Unknown Source)
+	at homepage.HomePage.enteruserName(HomePage.java:39)
+	at stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page(HomePageStepDefinition.java:83)
+	at ✽.I am at Capital one homePage(file:///C:/Users/dendo/IdeaProjects/BDD_Automation_Framework_Team1/CapitalOne/src/test/java/features/HomePage.feature:93)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Capital one home page tests" name="location" time="5.786">
+        <failure message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchSessionException">
+            <![CDATA[Given I am at Capital one homePage..........................................failed
+And I click on Location.....................................................skipped
+And I enter a zip code......................................................skipped
+When I click on searchButton................................................skipped
+Then I should see all Capital One ATM location..............................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LP73FCC', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy26.sendKeys(Unknown Source)
+	at homepage.HomePage.enteruserName(HomePage.java:39)
+	at stepDefinitions.HomePageStepDefinition.i_am_at_capital_one_home_page(HomePageStepDefinition.java:83)
+	at ✽.I am at Capital one homePage(file:///C:/Users/dendo/IdeaProjects/BDD_Automation_Framework_Team1/CapitalOne/src/test/java/features/HomePage.feature:101)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
